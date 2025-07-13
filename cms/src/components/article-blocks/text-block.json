@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_article_blocks_text_blocks",
+  "info": {
+    "displayName": "text-block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
