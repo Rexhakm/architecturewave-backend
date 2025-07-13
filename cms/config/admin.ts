@@ -1,14 +1,14 @@
 type EnvFunction = {
-  (key: string): string | undefined;
+  (key: string, defaultValue?: string): string | undefined;
   bool: (key: string, defaultValue?: boolean) => boolean;
 };
 
 export default ({ env }: { env: EnvFunction }) => ({
   auth: {
-    secret: env('ADMIN_JWT_SECRET'),
+    secret: env('ADMIN_JWT_SECRET', 'WAdkTXMSmGOwXrZuDD3d9P0HdZzU1UTdBi9T1UNL3h4='),
   },
   apiToken: {
-    salt: env('API_TOKEN_SALT'),
+    salt: env('API_TOKEN_SALT', 'H4XKZcuqZMxM7jlOScPjcfy3Z4O7DJN4'),
   },
   transfer: {
     token: {
