@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "lifestyle",
+        "travel",
+        "diy",
+        "art"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "authorName": {
+      "type": "text"
+    },
+    "authorImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "richContent": {
+      "type": "blocks"
+    },
+    "similarArticles": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "article-blocks.text-block",
+        "article-blocks.image-block"
+      ]
+    }
+  }
+}

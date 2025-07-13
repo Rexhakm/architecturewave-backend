@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -10,6 +12,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --font-roboto-mono: var(--font-roboto-mono);
+  --font-mazzard-soft: var(--font-mazzard-soft);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +27,18 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Example font usage classes */
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-roboto-mono {
+  font-family: var(--font-roboto-mono);
+}
+
+.font-mazzard-soft {
+  font-family: var(--font-mazzard-soft);
 }
