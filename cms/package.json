@@ -8,6 +8,7 @@
     "console": "strapi console",
     "deploy": "strapi deploy",
     "dev": "strapi develop",
+    "dev:local": "NODE_ENV=development strapi develop",
     "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi",

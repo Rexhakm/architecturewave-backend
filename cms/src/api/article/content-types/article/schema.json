@@ -21,7 +21,11 @@
     "category": {
       "type": "enumeration",
       "enum": [
-        "lifestyle",
+        "architecture",
+        "interior designer ",
+        "feeling good ",
+        "healing",
+        "lifestyle + culture",
         "travel",
         "diy",
         "art"

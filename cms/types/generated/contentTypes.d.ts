@@ -393,7 +393,16 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       ['article-blocks.text-block', 'article-blocks.image-block']
     >;
     category: Schema.Attribute.Enumeration<
-      ['lifestyle', 'travel', 'diy', 'art']
+      [
+        'architecture',
+        'interior designer ',
+        'feeling good ',
+        'healing',
+        'lifestyle + culture',
+        'travel',
+        'diy',
+        'art',
+      ]
     >;
     coverImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
