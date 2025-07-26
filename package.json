@@ -1,0 +1,10 @@
+{
+  "name": "architecture-wave",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd cms && npm install && npm run build",
+    "start": "cd cms && npm start",
+    "dev": "cd cms && npm run dev"
+  }
+} 
