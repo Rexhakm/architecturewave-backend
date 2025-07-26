@@ -1,0 +1,9 @@
+# Copy this content to your .env file
+
+# Cloudinary Configuration
+CLOUDINARY_NAME=your_cloudinary_cloud_name
+CLOUDINARY_KEY=your_cloudinary_api_key
+CLOUDINARY_SECRET=your_cloudinary_api_secret
+
+# Strapi Configuration
+JWT_SECRET=your_jwt_secret_here 
