@@ -11,23 +11,20 @@ export default ({ env }) => ({
         cloud_name: env('CLOUDINARY_NAME'),
         api_key: env('CLOUDINARY_KEY'),
         api_secret: env('CLOUDINARY_SECRET'),
-        params: {
+      },
+      actionOptions: {
+        upload: {
           folder: 'architecture-wave',
+          transformation: [
+            {
+              width: 200,
+              height: 200,
+              crop: 'thumb',
+              gravity: 'center',
+            },
+          ],
         },
       },
-    },
-  },
-  actionOptions: {
-    upload: {
-      folder: 'architecture-wave',
-      transformation: [
-        {
-          width: 200,
-          height: 200,
-          crop: 'thumb',
-          gravity: 'center',
-        },
-      ],
     },
   },
 });
