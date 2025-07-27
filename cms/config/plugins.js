@@ -14,4 +14,17 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  actionOptions: {
+    upload: {
+      folder: 'strapi-uploads', // Optional: your custom folder
+      transformation: [
+        {
+          width: 200,
+          height: 200,
+          crop: 'thumb',
+          gravity: 'center',
+        },
+      ],
+    },
+  },
 }); 

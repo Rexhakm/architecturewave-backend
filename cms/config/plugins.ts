@@ -17,4 +17,17 @@ export default ({ env }) => ({
       },
     },
   },
+  actionOptions: {
+    upload: {
+      folder: 'architecture-wave',
+      transformation: [
+        {
+          width: 200,
+          height: 200,
+          crop: 'thumb',
+          gravity: 'center',
+        },
+      ],
+    },
+  },
 });
