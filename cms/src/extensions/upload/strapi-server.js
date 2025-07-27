@@ -17,7 +17,7 @@ module.exports = (plugin) => {
         if (['.jpg', '.jpeg', '.png'].includes(ext)) {
           const optimizedBuffer = await sharp(filePath)
             .resize({ width: 1600 }) // Resize max width
-            .toFormat('jpeg', { quality: 75 }) // Compress to 75% quality
+            .toFormat('jpeg', { quality: 95 }) // Compress to 75% quality
             .toBuffer();
 
           await fs.writeFile(filePath, optimizedBuffer);
