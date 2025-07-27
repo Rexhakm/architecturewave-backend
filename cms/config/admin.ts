@@ -12,7 +12,7 @@ export default ({ env }: { env: EnvFunction }) => ({
   },
   transfer: {
     token: {
-      salt: env('TRANSFER_TOKEN_SALT'),
+      salt: env('TRANSFER_TOKEN_SALT', 'H4XKZcuqZMxM7jlOScPjcfy3Z4O7DJN4'),
     },
   },
   secrets: {
