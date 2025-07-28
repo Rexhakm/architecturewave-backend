@@ -420,6 +420,18 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     richContent: Schema.Attribute.Blocks;
+    secondCategory: Schema.Attribute.Enumeration<
+      [
+        'architecture',
+        'interior designer ',
+        'feeling good ',
+        'healing',
+        'lifestyle + culture',
+        'travel',
+        'diy',
+        'art',
+      ]
+    >;
     similarArticles: Schema.Attribute.Relation<
       'oneToOne',
       'plugin::users-permissions.user'

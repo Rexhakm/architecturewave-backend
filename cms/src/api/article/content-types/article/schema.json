@@ -10,6 +10,7 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
@@ -72,6 +73,19 @@
       "components": [
         "article-blocks.text-block",
         "article-blocks.image-block"
+      ]
+    },
+    "secondCategory": {
+      "type": "enumeration",
+      "enum": [
+        "architecture",
+        "interior designer ",
+        "feeling good ",
+        "healing",
+        "lifestyle + culture",
+        "travel",
+        "diy",
+        "art"
       ]
     }
   }
