@@ -87,6 +87,9 @@
         "diy",
         "art"
       ]
+    },
+    "isPromoted": {
+      "type": "boolean"
     }
   }
 }
