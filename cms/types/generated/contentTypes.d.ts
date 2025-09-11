@@ -468,6 +468,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'api::product.product'
     > &
       Schema.Attribute.Private;
+    price: Schema.Attribute.String;
     product_id: Schema.Attribute.UID;
     product_images: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',

@@ -48,6 +48,9 @@
     },
     "feature_text": {
       "type": "text"
+    },
+    "price": {
+      "type": "string"
     }
   }
 }
