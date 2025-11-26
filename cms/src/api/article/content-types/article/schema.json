@@ -90,6 +90,9 @@
     },
     "isPromoted": {
       "type": "boolean"
+    },
+    "isFeatured": {
+      "type": "boolean"
     }
   }
 }
